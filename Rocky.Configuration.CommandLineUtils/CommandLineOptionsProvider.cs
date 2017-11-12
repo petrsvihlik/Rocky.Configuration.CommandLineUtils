@@ -20,12 +20,18 @@ namespace Rocky.Configuration.CommandLineUtils
             {
                 switch (commandOption.OptionType)
                 {
-                    case CommandOptionType.MultipleValue:
                     case CommandOptionType.SingleValue:
                         string value = commandOption.Value();
                         if (!string.IsNullOrEmpty(value))
                         {
                             Data.Add(commandOption.LongName, value);
+                        }
+                        break;
+
+                    case CommandOptionType.MultipleValue:
+                        if (commandOption.Values.Count > 0)
+                        {
+                            Data.Add(commandOption.LongName, string.Join(",", commandOption.Values));
                         }
                         break;
 

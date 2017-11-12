@@ -2,10 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <Description>Lets developer use Microsoft.Extensions.CommandLineUtils as a configuration source for Microsoft.Extensions.Configuration.</Description>
+    <Description>Use Microsoft.Extensions.CommandLineUtils as a configuration source for Microsoft.Extensions.Configuration.</Description>
     <Authors>rocky.intel</Authors>
     <Company />
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseUrl>https://github.com/petrsvihlik/Rocky.Configuration.CommandLineUtils/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/petrsvihlik/Rocky.Configuration.CommandLineUtils</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/petrsvihlik/Rocky.Configuration.CommandLineUtils</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
